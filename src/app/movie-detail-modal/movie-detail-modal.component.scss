@@ -1,0 +1,30 @@
+@import "../../styles.scss";
+
+.modal-dialog {
+  @media only screen and (min-width: $small) {
+    margin-right: 20px;
+  }
+}
+.modal-header {
+  padding: 0px;
+}
+
+.poster-bg {
+  width: 100%;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  min-height: 250px;
+  padding: 1rem;
+}
+
+.movie-detail-list {
+  list-style: none;
+  color: $base-font-gray;
+  li {
+    margin-bottom: 10px;
+    .detail-label {
+      font-weight: 700;
+    }
+  }
+}

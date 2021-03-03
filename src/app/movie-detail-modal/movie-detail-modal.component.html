@@ -1,0 +1,58 @@
+<div class="light-background">
+  <div class="modal-header">
+    <div class="poster-bg" style="background: url('{{ movie.Poster }}')">
+      <button
+        type="button"
+        class="close pull-right"
+        aria-label="Close"
+        (click)="onClose()"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+  <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row" style="margin-bottom: 20px">
+        <div class="col-12">
+          <h2>{{ movie.Title }}</h2>
+          <h4>{{ movie.Year }}</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <ul class="movie-detail-list">
+            <li><span class="detail-label">Rated:</span> {{ movie.Rated }}</li>
+            <li>
+              <span class="detail-label">Released:</span> {{ movie.Released }}
+            </li>
+            <li>
+              <span class="detail-label">Runtime:</span> {{ movie.Runtime }}
+            </li>
+            <li><span class="detail-label">Genre:</span> {{ movie.Genre }}</li>
+            <li>
+              <span class="detail-label">Director:</span> {{ movie.Director }}
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <ul class="movie-detail-list">
+            <li>
+              <span class="detail-label">Writer:</span> {{ movie.Writer }}
+            </li>
+            <li>
+              <span class="detail-label">Actors:</span> {{ movie.Actors }}
+            </li>
+            <li><span class="detail-label">Plot:</span> {{ movie.Plot }}</li>
+            <li>
+              <span class="detail-label">Language:</span> {{ movie.Language }}
+            </li>
+            <li>
+              <span class="detail-label">Country:</span> {{ movie.Country }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

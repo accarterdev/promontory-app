@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+//Colors
+$base-cadet-blue: #429ea6;
+$base-indigo: #153b50;
+$base-light-gray: #cad0d6;
+$base-font-gray: #404040;
+$base-white: #ffffff;
+
+//Fonts
+$base-font: "Roboto", sans-serif;
+
+//Sizes
+$small: 300px;
+$medium: 900px;
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: $base-font;
+
+  .light-background {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+      color: $base-cadet-blue;
+    }
+  }
+
+  .dark-background {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+      color: $base-white;
+      opacity: 0.7;
+    }
+  }
+}

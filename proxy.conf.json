@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://www.omdbapi.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

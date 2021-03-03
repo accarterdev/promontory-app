@@ -1,0 +1,49 @@
+<div class="wrapper header-bar-container dark-background">
+  <ng-container *ngIf="navService.isMobileView">
+    <div class="row">
+      <div class="col-3">
+        <button type="button" class="nav-toggle-button" (click)="toggleNav()">
+          <i *ngIf="isSideNavHidden" class="fa fa-bars" aria-hidden="true"></i>
+          <i
+            *ngIf="!isSideNavHidden"
+            class="fa fa-times"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+      <div class="col-6">
+        <h1 class="header-title">{{ appTitle }}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="search-input-underlined">
+          <input
+            type="text"
+            class="text-align-center mobile-search"
+            [(ngModel)]="movieQuery"
+            (ngModelChange)="onSearchFieldChange($event)"
+          />
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!navService.isMobileView">
+    <div class="row">
+      <div class="col-9">
+        <h1 class="header-title">{{ appTitle }}</h1>
+      </div>
+      <div class="col-3">
+        <div class="search-input-underlined">
+          <input
+            type="text"
+            [(ngModel)]="movieQuery"
+            (ngModelChange)="onSearchFieldChange($event)"
+          />
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

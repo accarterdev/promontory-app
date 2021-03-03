@@ -1,0 +1,45 @@
+@import "../../styles.scss";
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  height: 100vh;
+  transition: all 0.3s;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: $base-indigo;
+}
+
+#sidebar.hidden {
+  margin-left: -300px;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+a,
+a:hover,
+a:focus {
+  color: $base-white;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+}
+
+#sidebar ul li a {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  &:hover {
+    background-color: $base-cadet-blue;
+  }
+}
+
+hr {
+  border-top: 1px solid #fff;
+  margin-top: 0;
+}

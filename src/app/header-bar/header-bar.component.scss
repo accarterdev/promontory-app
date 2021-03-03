@@ -1,0 +1,59 @@
+@import "../../styles.scss";
+
+.header-bar-container {
+  background-color: $base-cadet-blue;
+
+  .header-title {
+    margin-top: 12px;
+    padding: 8px 15px;
+    font-size: 30px;
+    @media only screen and (max-width: $medium) {
+      font-size: 22px;
+    }
+  }
+
+  .search-input-underlined > input,
+  .search-input-filled > input {
+    border: none;
+    border-bottom: 0.125rem solid rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 2rem;
+    font-size: 1.25rem;
+    padding-left: 0.875rem;
+    line-height: 147.6%;
+    padding-top: 0.825rem;
+    padding-bottom: 0.5rem;
+    background-color: transparent;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  .search-input-underlined > input:focus,
+  .search-input-filled > input:focus {
+    outline: none;
+  }
+
+  input,
+  select,
+  textarea {
+    color: $base-white;
+    opacity: 0.7;
+    font-size: 18px;
+  }
+}
+
+.nav-toggle-button {
+  background: none;
+  border: none;
+  color: $base-white;
+  margin: 20px 12px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.mobile-search {
+  padding-top: 0px;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,29 @@
+<div class="container-fluid light-background">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="results-title">{{ resultsTitle }}</h2>
+    </div>
+  </div>
+  <div class="row" *ngIf="loading">
+    <div class="center-div">
+      <div class="spinner-border text-info text-align-center" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="!loading">
+    <ng-container *ngIf="!errorMessage">
+      <div *ngFor="let movie of movieResults" class="col-sm-12 col-md-4">
+        <app-movie-result-card [movieResult]="movie"></app-movie-result-card>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="errorMessage">
+      <div class="center-div">
+        <span
+          ><p class="error-message">{{ errorMessage }}</p></span
+        >
+      </div>
+    </ng-container>
+  </div>
+</div>

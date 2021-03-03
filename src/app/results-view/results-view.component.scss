@@ -1,0 +1,17 @@
+@import "../../styles.scss";
+
+.results-title {
+  font-size: 25px;
+  padding: 12px 10px;
+}
+
+.center-div {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+
+.error-message {
+  font-size: 22px;
+  color: $base-light-gray;
+}
