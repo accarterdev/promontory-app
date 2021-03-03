@@ -25,6 +25,18 @@ describe('NavService', () => {
       expect(service.hideSideNav).toBeTrue();
     });
 
+    it('should manually set hideSideNav', () => {
+      service.hideSideNav = true;
+      service.setSideNavHidden(false);
+      expect(service.hideSideNav).toBeFalse();
+    });
+
+    it('should manually set isMobileView', () => {
+      service.isMobileView = true;
+      service.setMobileView(false);
+      expect(service.isMobileView).toBeFalse();
+    });
+
     it('should fetch Navigation List', () => {
       const mockNavList: MenuItem[] = [
         { Title: 'Menu 1', Url: '' },

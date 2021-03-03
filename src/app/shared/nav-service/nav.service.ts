@@ -25,10 +25,6 @@ export class NavService {
     });
   }
 
-  toggleSidebarVisibility() {
-    this.sideNavVisibilityChange.next(!this.hideSideNav);
-  }
-
   public toggleSideNav(): void {
     this.sideNavVisibilityChange.next(!this.hideSideNav);
   }

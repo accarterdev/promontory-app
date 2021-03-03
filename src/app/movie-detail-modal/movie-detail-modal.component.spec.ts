@@ -68,14 +68,4 @@ describe('MovieDetailModalComponent', () => {
       expect(component.loading).toBeFalse();
     });
   });
-
-  // describe('Modal behavior', () => {
-  //   it('should call modalref.hide on close', () => {
-  //     spyOn(modalRef, 'hide');
-  //     component.ngOnInit();
-  //     component.onClose();
-  //     // fixture.detectChanges();
-  //     expect(modalRef.hide).toHaveBeenCalled();
-  //   });
-  // });
 });
