@@ -10,6 +10,7 @@ import { OmdbResult } from '../models/omdb-result.model';
 })
 export class OmdbService {
   private apiKey: string = 'a4d98298';
+  //Just commenting here to note that in a real production app, I would certainly never dream of storing an api key in an Angular service.
   constructor(private http: HttpClient) {}
 
   getMoviesByTitle(titleQuery: string = 'coach'): Observable<OmdbResult> {
