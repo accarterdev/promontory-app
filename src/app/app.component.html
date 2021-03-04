@@ -4,9 +4,12 @@
   (movieSearchEmitter)="onMovieSearch($event)"
 ></app-header-bar>
 <div class="wrapper">
-  <app-side-navigation></app-side-navigation>
+  <app-side-navigation
+    [ngClass]="{ fullnav: !isSideNavHidden && isMobile }"
+  ></app-side-navigation>
+
   <!-- Page Content -->
-  <div id="content">
+  <div id="content" [ngClass]="{ hiddencontent: !isSideNavHidden && isMobile }">
     <app-results-view
       [loading]="loading"
       [movieResults]="movieResults"

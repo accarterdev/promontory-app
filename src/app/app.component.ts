@@ -20,6 +20,14 @@ export class AppComponent {
   movieResults: MovieResult[] = [];
   constructor(private ombd: OmdbService, public navService: NavService) {}
 
+  get isSideNavHidden(): boolean {
+    return this.navService.hideSideNav;
+  }
+
+  get isMobile(): boolean {
+    return this.navService.isMobileView;
+  }
+
   ngOnInit(): void {
     this.handleMobileTransition();
     window.onresize = () => this.handleMobileTransition();

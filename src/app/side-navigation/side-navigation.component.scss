@@ -11,7 +11,7 @@
   line-height: 1.5;
   background-color: $base-indigo;
   @media only screen and (max-width: $medium) {
-    min-width: 90vh;
+    max-width: unset;
   }
 }
 
